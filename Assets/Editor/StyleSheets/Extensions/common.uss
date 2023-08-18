@@ -1,0 +1,28 @@
+RedMarker
+{
+   width:9px;
+   height:18px;
+   background-image: resource("Assets/TimelineUtility/Assets/red_marker.png");
+}
+
+YellowMarker
+{
+   width:9px;
+   height:18px;
+   background-image: resource("Assets/TimelineUtility/Assets/yellow_marker.png");
+}
+
+BlueMarker
+{
+   width:9px;
+   height:18px;
+   background-image: resource("Assets/TimelineUtility/Assets/blue_marker.png");
+}
+
+GreenMarker
+{
+   width:9px;
+   height:18px;
+   background-image: resource("Assets/TimelineUtility/Assets/green_marker.png");
+}
+

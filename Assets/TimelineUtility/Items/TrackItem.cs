@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections.Generic;
 using TimelineUtility.Interfaces;
 using UnityEngine.Timeline;
@@ -67,3 +68,4 @@ namespace TimelineUtility.Items
         }
     }
 }
+#endif

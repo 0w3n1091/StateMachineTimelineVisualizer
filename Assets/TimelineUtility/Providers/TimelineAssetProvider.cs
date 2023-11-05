@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using System.IO;
 using TimelineUtility.Interfaces;
 using UnityEditor;
@@ -30,3 +31,4 @@ namespace TimelineUtility.Providers
         }
     }
 }
+#endif

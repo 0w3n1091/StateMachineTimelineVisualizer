@@ -1,4 +1,4 @@
-namespace TimelineUtility.Timer
+namespace Timer
 {
     public interface ITimePublisher
     {

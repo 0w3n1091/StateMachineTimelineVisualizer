@@ -1,9 +1,8 @@
-﻿using System;
+﻿#if UNITY_EDITOR
 using TimelineUtility.Controllers;
 using TimelineUtility.Interfaces;
 using TimelineUtility.Items;
-using TimelineUtility.Timer;
-using UnityEditor.Timeline;
+using Timer;
 using UnityEngine;
 
 namespace TimelineUtility
@@ -38,3 +37,4 @@ namespace TimelineUtility
         public void FinishProcess() => controller.FinishActiveProcess(processTrackName);
     }
 }
+#endif

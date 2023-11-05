@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace TimelineUtility.Timer
+namespace Timer
 {
     public class TimePublisher : ITimePublisher
     {

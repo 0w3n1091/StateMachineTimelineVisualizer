@@ -1,8 +1,9 @@
+#if UNITY_EDITOR
 using System;
 using TimelineUtility.Interfaces;
 using TimelineUtility.Items;
 using TimelineUtility.Providers;
-using TimelineUtility.Timer;
+using Timer;
 using UnityEditor.Timeline;
 using UnityEngine.Timeline;
 
@@ -87,3 +88,4 @@ namespace TimelineUtility.Controllers
         }
     }
 }
+#endif

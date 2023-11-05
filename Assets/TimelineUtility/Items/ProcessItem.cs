@@ -1,5 +1,6 @@
+#if UNITY_EDITOR
 using TimelineUtility.Interfaces;
-using TimelineUtility.Timer;
+using Timer;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
@@ -30,3 +31,4 @@ namespace TimelineUtility.Items
         }
     }
 }
+#endif

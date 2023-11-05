@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using TimelineUtility.Interfaces;
 using UnityEngine;
 using UnityEngine.Timeline;
@@ -10,3 +11,4 @@ namespace TimelineUtility.Items
         [TextArea] public string Description;
     }
 }
+#endif

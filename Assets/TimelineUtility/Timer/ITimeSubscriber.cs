@@ -1,6 +1,4 @@
-﻿using UnityEngine.Timeline;
-
-namespace TimelineUtility.Timer
+﻿namespace TimelineUtility.Timer
 {
     public interface ITimeSubscriber
     {

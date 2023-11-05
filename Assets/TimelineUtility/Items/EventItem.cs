@@ -1,4 +1,3 @@
-using TimelineUtility.Core.Interfaces;
 using TimelineUtility.Interfaces;
 using UnityEngine;
 using UnityEngine.Timeline;

@@ -12,6 +12,10 @@ namespace TimelineUtility.Providers
     {
         private const string ASSETS_PATH = "Assets/TimelineUtility/Logs";
         
+        /// <summary>
+        /// Creates new timeline asset log.
+        /// </summary>
+        /// <returns>Created timeline asset.</returns>
         public TimelineAsset CreateAsset()
         {
             if (!Directory.Exists(ASSETS_PATH))

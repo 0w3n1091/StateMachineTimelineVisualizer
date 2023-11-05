@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using TimelineUtility.Core.Interfaces;
 using TimelineUtility.Interfaces;
 using UnityEngine.Timeline;
 

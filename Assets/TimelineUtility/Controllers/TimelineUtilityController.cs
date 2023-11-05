@@ -1,5 +1,4 @@
 using System;
-using TimelineUtility.Core.Interfaces;
 using TimelineUtility.Interfaces;
 using TimelineUtility.Items;
 using TimelineUtility.Providers;
@@ -50,21 +49,6 @@ namespace TimelineUtility.Controllers
             timePublisher.Subscribe(process);
             TimelineEditor.Refresh(RefreshReason.ContentsAddedOrRemoved);
         }
-
-        public void FinishActiveProcess(string trackName)
-        {
-            if (!timeline.TryGet(trackName, out TrackItem trackItem))
-                throw new Exception($"[{trackName}] track could not be found.");
-            
-            timePublisher.Unsubscribe(trackItem.activeProcess);
-            TimelineEditor.Refresh(RefreshReason.ContentsAddedOrRemoved);
-        }
-        
-        public void EndProcess(ProcessItem processItem)
-        {
-            timePublisher.Unsubscribe(processItem);
-            TimelineEditor.Refresh(RefreshReason.ContentsAddedOrRemoved);
-        }
         
         public void AddEvent<TEventItem>(string eventName, string trackName, string description) where TEventItem : EventItem
         {
@@ -80,6 +64,25 @@ namespace TimelineUtility.Controllers
             
             track.Add(eventItem);
             
+            TimelineEditor.Refresh(RefreshReason.ContentsAddedOrRemoved);
+        }
+        
+        public void FinishActiveProcess(string trackName)
+        {
+            if (!timeline.TryGet(trackName, out TrackItem trackItem))
+                throw new Exception($"[{trackName}] track could not be found.");
+            
+            timePublisher.Unsubscribe(trackItem.activeProcess);
+            TimelineEditor.Refresh(RefreshReason.ContentsAddedOrRemoved);
+        }
+        
+        /// <summary>
+        /// Ends specific process.
+        /// </summary>
+        /// <param name="processItem">Specific ongoing processItem.</param>
+        private void EndProcess(ProcessItem processItem)
+        {
+            timePublisher.Unsubscribe(processItem);
             TimelineEditor.Refresh(RefreshReason.ContentsAddedOrRemoved);
         }
     }

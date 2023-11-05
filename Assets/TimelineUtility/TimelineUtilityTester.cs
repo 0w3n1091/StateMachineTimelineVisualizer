@@ -1,6 +1,5 @@
 ﻿using System;
 using TimelineUtility.Controllers;
-using TimelineUtility.Core.Interfaces;
 using TimelineUtility.Interfaces;
 using TimelineUtility.Items;
 using TimelineUtility.Timer;

@@ -1,9 +1,7 @@
-using TimelineUtility.Core.Interfaces;
 using TimelineUtility.Interfaces;
 using TimelineUtility.Timer;
 using UnityEngine;
 using UnityEngine.Playables;
-using UnityEngine.Serialization;
 using UnityEngine.Timeline;
 
 namespace TimelineUtility.Items
@@ -21,7 +19,11 @@ namespace TimelineUtility.Items
             Playable playable = new();
             return playable;
         }
-
+        
+        /// <summary>
+        /// Updates Process duration.
+        /// </summary>
+        /// <param name="time">Current time.</param>
         public void UpdateTime(double time)
         {
             Clip.duration = time - Clip.start;

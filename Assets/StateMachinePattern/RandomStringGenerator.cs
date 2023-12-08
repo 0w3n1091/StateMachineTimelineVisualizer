@@ -4,6 +4,11 @@ namespace StateMachinePattern
 {
     public class RandomStringGenerator
     {
+        /// <summary>
+        /// Generates a random string of specified length.
+        /// </summary>
+        /// <param name="length">The length of the random string to generate.</param>
+        /// <returns>A random string of specified length.</returns>
         public static string GenerateRandomString(int length)
         {
             var random = new Random();

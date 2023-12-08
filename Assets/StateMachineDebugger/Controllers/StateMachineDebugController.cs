@@ -1,13 +1,13 @@
 #if UNITY_EDITOR
 using System;
-using TimelineUtility.Interfaces;
-using TimelineUtility.Items;
-using TimelineUtility.Providers;
+using StateMachineDebugger.Interfaces;
+using StateMachineDebugger.Items;
+using StateMachineDebugger.Providers;
 using Timer;
 using UnityEditor.Timeline;
 using UnityEngine.Timeline;
 
-namespace TimelineUtility.Controllers
+namespace StateMachineDebugger.Controllers
 {
     public class StateMachineDebugController : IStateMachineDebugController
     {

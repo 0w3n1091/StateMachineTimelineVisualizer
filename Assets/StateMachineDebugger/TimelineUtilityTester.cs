@@ -1,12 +1,12 @@
 ﻿#if UNITY_EDITOR
+using StateMachineDebugger.Controllers;
+using StateMachineDebugger.Interfaces;
 using StateMachinePattern.States;
-using TimelineUtility.Controllers;
-using TimelineUtility.Interfaces;
 using Timer;
 using UnityEngine;
 using StateMachine = StateMachinePattern.Base.StateMachine;
 
-namespace TimelineUtility
+namespace StateMachineDebugger
 {
     public class TimelineUtilityTester : MonoBehaviour
     {

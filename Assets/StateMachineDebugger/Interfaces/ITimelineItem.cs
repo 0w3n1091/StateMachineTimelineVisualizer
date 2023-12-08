@@ -1,8 +1,5 @@
-﻿namespace TimelineUtility.Interfaces
+﻿namespace StateMachineDebugger.Interfaces
 {
-    /// <summary>
-    /// Marker
-    /// </summary>
     public interface ITimelineItem
     {
     }

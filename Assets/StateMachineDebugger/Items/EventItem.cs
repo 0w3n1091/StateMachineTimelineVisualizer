@@ -1,9 +1,9 @@
 #if UNITY_EDITOR
-using TimelineUtility.Interfaces;
+using StateMachineDebugger.Interfaces;
 using UnityEngine;
 using UnityEngine.Timeline;
 
-namespace TimelineUtility.Items
+namespace StateMachineDebugger.Items
 {
     public class EventItem : Marker, ITimelineItem
     {

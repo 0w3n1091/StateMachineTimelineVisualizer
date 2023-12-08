@@ -1,7 +1,7 @@
 ﻿#if UNITY_EDITOR
 using UnityEngine.Timeline;
 
-namespace TimelineUtility.Items
+namespace StateMachineDebugger.Items
 {
     [CustomStyle("YellowMarker")]
     public class YellowEventItem : EventItem { }

@@ -1,6 +1,6 @@
-﻿using StateMachinePattern.Base;
-using TimelineUtility.Interfaces;
-using TimelineUtility.Items;
+﻿using StateMachineDebugger.Interfaces;
+using StateMachineDebugger.Items;
+using StateMachinePattern.Base;
 using UnityEngine;
 using Input = UnityEngine.Input;
 

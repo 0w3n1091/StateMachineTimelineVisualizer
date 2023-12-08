@@ -1,9 +1,9 @@
 #if UNITY_EDITOR
 using System.Collections.Generic;
-using TimelineUtility.Interfaces;
+using StateMachineDebugger.Interfaces;
 using UnityEngine.Timeline;
 
-namespace TimelineUtility.Items
+namespace StateMachineDebugger.Items
 {
     [TrackClipType(typeof(StateItem))]
     public class TrackItem : PlayableTrack, ITimelineItem, IExtendable<StateItem>, IExtendable<EventItem>

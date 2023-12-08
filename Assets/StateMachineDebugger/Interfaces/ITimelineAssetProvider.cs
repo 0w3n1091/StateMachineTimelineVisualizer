@@ -1,13 +1,13 @@
 ﻿using UnityEngine.Timeline;
 
-namespace TimelineUtility.Interfaces
+namespace StateMachineDebugger.Interfaces
 {
     public interface ITimelineAssetProvider
     {
         /// <summary>
-        /// Creates new timeline asset.
+        /// Creates a new timeline asset.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The newly created timeline asset.</returns>
         public TimelineAsset CreateAsset();
     }
 }

@@ -1,9 +1,9 @@
 ﻿#if UNITY_EDITOR
 using System.Collections.Generic;
-using TimelineUtility.Interfaces;
+using StateMachineDebugger.Interfaces;
 using UnityEngine.Timeline;
 
-namespace TimelineUtility.Items
+namespace StateMachineDebugger.Items
 {
     public class TimelineItem : ITimelineItem, IExtendable<TrackItem>
     {

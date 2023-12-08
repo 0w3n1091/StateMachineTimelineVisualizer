@@ -3,31 +3,31 @@ namespace Timer
     public interface ITimePublisher
     {
         /// <summary>
-        /// Updates time. Call it in one of MonoBehaviours Update() method.
+        /// Updates the time.
         /// </summary>
         public void UpdateTime();
-        
+
         /// <summary>
-        /// Subscribe to TimePublisher.
+        /// Subscribes an object to receive time updates.
         /// </summary>
-        /// <param name="subscriber"></param>
+        /// <param name="subscriber">The object that wishes to receive time updates.</param>
         public void Subscribe(ITimeSubscriber subscriber);
-        
+
         /// <summary>
-        /// Unsubscribe from TimePublisher.
+        /// Unsubscribe from a TimePublisher.
         /// </summary>
-        /// <param name="name"></param>
+        /// <param name="name">The ITimeSubscriber instance to unsubscribe.</param>
         public void Unsubscribe(ITimeSubscriber name);
-        
+
         /// <summary>
-        /// Update Subscribers.
+        /// Updates the subscribers.
         /// </summary>
         public void UpdateSubscribers();
-        
+
         /// <summary>
-        /// Returns current time.
+        /// Returns the current time as a double value.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The current time in seconds as a double value.</returns>
         public double GetTime();
     }
 }

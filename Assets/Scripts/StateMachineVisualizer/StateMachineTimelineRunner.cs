@@ -9,6 +9,9 @@ using StateMachine = StateMachinePattern.StateMachine;
 
 namespace StateMachineVisualizer
 {
+    /// <summary>
+    /// Represents a runner for the state machine with a visualized timeline in the Unity Editor.
+    /// </summary>
     public class StateMachineTimelineRunner : MonoBehaviour
     {
         private readonly ITimeProvider timeProvider = new LocalTimeProvider();

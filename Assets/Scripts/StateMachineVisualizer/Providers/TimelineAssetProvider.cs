@@ -9,12 +9,16 @@ using UnityEngine.Timeline;
 
 namespace StateMachineVisualizer.Providers
 {
+    /// <summary>
+    /// Provides functionality to create a new timeline asset for the state machine.
+    /// </summary>
     public class TimelineAssetProvider : ITimelineAssetProvider
     {
+        
         private const string ASSETS_PATH = "Assets/Logs";
-
+        
         /// <summary>
-        /// Creates a new timeline asset log.
+        /// Creates a new timeline asset for the state machine.
         /// </summary>
         /// <returns>The created timeline asset.</returns>
         public TimelineAsset CreateAsset()

@@ -3,12 +3,15 @@ using StateMachineVisualizer.Interfaces;
 
 namespace StateMachineVisualizer.States
 {
+    /// <summary>
+    /// Represents a state in the state machine that corresponds to a timeline on the visualizer.
+    /// </summary>
     public class TimelineState : State
     {
         protected readonly IStateMachineTimelineController timelineController;
         protected readonly string trackName;
         
-        public TimelineState(IStateMachine stateMachine, IStateMachineTimelineController timelineController) : base(stateMachine)
+        protected TimelineState(IStateMachine stateMachine, IStateMachineTimelineController timelineController) : base(stateMachine)
         {
             this.timelineController = timelineController;
             trackName = stateMachine.GetType().Name;

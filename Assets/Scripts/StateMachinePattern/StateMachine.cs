@@ -1,5 +1,8 @@
 ﻿namespace StateMachinePattern
 {
+    /// <summary>
+    /// Implementation of a state machine.
+    /// </summary>
     public class StateMachine : IStateMachine
     {
         private State currentState;
@@ -10,7 +13,7 @@
         public void Process() => currentState?.OnProcess();
 
         /// <summary>
-        /// Performs transition to the next state.
+        /// Transitions to the next state.
         /// </summary>
         /// <param name="state">The new state to transition to.</param>
         public void NextState(State state)

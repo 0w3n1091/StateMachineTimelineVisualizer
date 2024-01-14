@@ -1,5 +1,8 @@
 ﻿using System;
 
+/// <summary>
+/// Generates a random string.
+/// </summary>
 public class RandomStringGenerator
 {
     /// <summary>

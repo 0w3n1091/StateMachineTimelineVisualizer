@@ -9,6 +9,9 @@ using UnityEngine.Timeline;
 
 namespace StateMachineVisualizer.Controllers
 {
+    /// <summary>
+    /// Controller for managing the state machine timeline in the Unity Editor.
+    /// </summary>
     public class StateMachineTimelineController : IStateMachineTimelineController
     {
         private readonly ITimelineAssetProvider assetProvider = new TimelineAssetProvider();
@@ -76,9 +79,9 @@ namespace StateMachineVisualizer.Controllers
         }
         
         /// <summary>
-        /// Ends specific event.
+        /// Ends the specified state on the timeline.
         /// </summary>
-        /// <param name="stateItem">Specific ongoing processItem.</param>
+        /// <param name="stateItem">The state item to end.</param>
         private void EndState(StateItem stateItem)
         {
             timePublisher.Unsubscribe(stateItem);

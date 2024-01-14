@@ -4,13 +4,16 @@ using Timer.Interfaces;
 
 namespace Timer
 {
+    /// <summary>
+    /// Publishes time updates to subscribers.
+    /// </summary>
     public class TimePublisher : ITimePublisher
     {
         private readonly List<ITimeSubscriber> subscribers = new();
         private readonly ITimeProvider timeProvider;
         private readonly long startTicks; 
         private long nowTicks = 0;
-
+        
         public TimePublisher(ITimeProvider timeProvider)
         {
             this.timeProvider = timeProvider;

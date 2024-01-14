@@ -5,9 +5,9 @@ namespace StateMachineVisualizer.Interfaces
     public interface ITimelineAssetProvider
     {
         /// <summary>
-        /// Creates a new timeline asset.
+        /// Creates a new instance of TimelineAsset.
         /// </summary>
-        /// <returns>The newly created timeline asset.</returns>
+        /// <returns>The created TimelineAsset instance.</returns>
         public TimelineAsset CreateAsset();
     }
 }

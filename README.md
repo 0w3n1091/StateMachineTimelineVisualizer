@@ -1,3 +1,5 @@
+# State Machine Timeline Visualizer
+
 PL:
 Zestaw klas bazowych umożliwiających użytkownikowi rozszerzenie maszyny stanu o graficzną wizualizację jej przebiegu z wykorzystaniem pakietu Timeline. 
 Przebieg jest aktualizowany na biężąco oraz zapisywany do pliku co umożliwia późniejszą analizę. Klasy bazowe umożliwiają również wsparcie dla rejestrowania zdarzeń w postaci pinezek na konkretnych stanach.

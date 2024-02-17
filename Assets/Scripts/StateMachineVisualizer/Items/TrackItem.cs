@@ -1,6 +1,7 @@
 #if UNITY_EDITOR
 using System.Collections.Generic;
 using StateMachineVisualizer.Interfaces;
+using StateMachineVisualizer.Items.Events;
 using UnityEngine.Timeline;
 
 namespace StateMachineVisualizer.Items

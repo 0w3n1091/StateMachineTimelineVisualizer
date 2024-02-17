@@ -2,7 +2,7 @@
 using StateMachineVisualizer.Interfaces;
 using UnityEngine.Timeline;
 
-namespace StateMachineVisualizer.Items
+namespace StateMachineVisualizer.Items.Events
 {
     public class EventItem : Marker, ITimelineItem { }
 }

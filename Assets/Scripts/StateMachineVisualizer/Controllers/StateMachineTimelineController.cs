@@ -2,6 +2,7 @@
 using System;
 using StateMachineVisualizer.Interfaces;
 using StateMachineVisualizer.Items;
+using StateMachineVisualizer.Items.Events;
 using StateMachineVisualizer.Providers;
 using Timer.Interfaces;
 using UnityEditor.Timeline;

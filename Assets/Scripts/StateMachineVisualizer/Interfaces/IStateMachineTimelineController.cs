@@ -1,4 +1,5 @@
 ﻿using StateMachineVisualizer.Items;
+using StateMachineVisualizer.Items.Events;
 
 namespace StateMachineVisualizer.Interfaces
 {

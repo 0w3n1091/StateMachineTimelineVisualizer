@@ -8,29 +8,29 @@ namespace StateMachineVisualizer.States
     /// </summary>
     public class TimelineState : State
     {
-        protected readonly IStateMachineTimelineController timelineController;
+        protected readonly TimelineStateMachine timelineStateMachine;
         protected readonly string trackName;
         
-        protected TimelineState(IStateMachine stateMachine, IStateMachineTimelineController timelineController) : base(stateMachine)
+        protected TimelineState(TimelineStateMachine stateMachine) : base(stateMachine)
         {
-            this.timelineController = timelineController;
+            timelineStateMachine = stateMachine;
             trackName = stateMachine.GetType().Name;
         }
 
         public override void OnOpen()
         {
             string stateName = GetType().Name;
-            timelineController.StartState(stateName, trackName);
+            timelineStateMachine.Controller.StartState(stateName, trackName);
         }
 
         public override void OnProcess()
         {
-            timelineController.RefreshTimeline();
+            timelineStateMachine.Controller.RefreshTimeline();
         }
 
         public override void OnClose()
         {
-            timelineController.FinishActiveState(trackName);
+            timelineStateMachine.Controller.FinishActiveState(trackName);
         }
     }
 }
